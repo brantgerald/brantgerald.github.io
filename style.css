@@ -66,3 +66,20 @@ footer {
   font-size: 0.9rem;
   color: #9ca3af;
 }
+
+.resume-badge {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #64ffda;
+  color: #0f2027;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.resume-badge:hover {
+  background: #52e0c4;
+}
