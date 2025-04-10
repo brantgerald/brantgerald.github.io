@@ -1,11 +1,11 @@
-/* style.css - Groovy Remix */
+/* style.css - Groovy Orange Remix */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;700&display=swap');
 
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: radial-gradient(circle at top left, #ff6ec4, #7873f5);
-  color: #fefefe;
+  background: radial-gradient(circle at top left, #ff9a00, #ff6f00, #442200);
+  color: #fff8e7;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -13,7 +13,7 @@ body {
 .hero {
   text-align: center;
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background: linear-gradient(135deg, #331a00, #663300, #994d00);
   animation: pulseBg 10s infinite ease-in-out;
 }
 
@@ -30,13 +30,13 @@ body {
   font-size: 3.5rem;
   margin-bottom: 1rem;
   font-family: 'Fira Code', monospace;
-  color: #fffb96;
-  text-shadow: 2px 2px 0 #ff4b91;
+  color: #ffd580;
+  text-shadow: 2px 2px 0 #ff9100;
 }
 
 .hero p {
   font-size: 1.4rem;
-  color: #c5c5ff;
+  color: #ffe0b2;
 }
 
 section {
@@ -49,15 +49,15 @@ section {
 }
 
 h2 {
-  border-bottom: 3px dashed #fffb96;
+  border-bottom: 3px dashed #ffc107;
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
   font-family: 'Fira Code', monospace;
-  color: #fffb96;
+  color: #ffc107;
 }
 
 .project {
-  background: #5e60ce;
+  background: #cc6600;
   padding: 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
@@ -67,35 +67,35 @@ h2 {
 
 .project:hover {
   transform: rotate(-1deg) scale(1.03);
-  background: #6930c3;
+  background: #e67e22;
 }
 
 a {
-  color: #ff4b91;
+  color: #ffb84d;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline wavy;
-  color: #fffb96;
+  color: #ffd580;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  background: #0f0c29;
+  background: #331a00;
   font-size: 1rem;
-  color: #b3b3ff;
-  border-top: 2px solid #ff4b91;
+  color: #ffddb3;
+  border-top: 2px solid #ff9100;
 }
 
 .resume-badge {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: #fffb96;
-  color: #0f0c29;
+  background: #ffb84d;
+  color: #331a00;
   padding: 0.6rem 1.2rem;
   border-radius: 10px;
   font-weight: bold;
@@ -106,6 +106,6 @@ footer {
 }
 
 .resume-badge:hover {
-  background: #ffe359;
+  background: #ffc966;
   transform: scale(1.05);
 }
