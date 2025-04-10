@@ -1,85 +1,111 @@
-/* style.css */
+/* style.css - Groovy Remix */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;700&display=swap');
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: #f4f4f4;
+  background: radial-gradient(circle at top left, #ff6ec4, #7873f5);
+  color: #fefefe;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .hero {
   text-align: center;
-  padding: 4rem 2rem;
-  background: #1f2937;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  animation: pulseBg 10s infinite ease-in-out;
+}
+
+@keyframes pulseBg {
+  0%, 100% {
+    background-position: left center;
+  }
+  50% {
+    background-position: right center;
+  }
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
   font-family: 'Fira Code', monospace;
+  color: #fffb96;
+  text-shadow: 2px 2px 0 #ff4b91;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #9ca3af;
+  font-size: 1.4rem;
+  color: #c5c5ff;
 }
 
 section {
-  padding: 2rem;
-  max-width: 800px;
+  padding: 3rem 2rem;
+  max-width: 900px;
   margin: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-  border-bottom: 2px solid #64ffda;
+  border-bottom: 3px dashed #fffb96;
   padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-family: 'Fira Code', monospace;
+  color: #fffb96;
 }
 
 .project {
-  background: #374151;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  transition: transform 0.2s ease;
+  background: #5e60ce;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .project:hover {
-  transform: scale(1.02);
-  background: #4b5563;
+  transform: rotate(-1deg) scale(1.03);
+  background: #6930c3;
 }
 
 a {
-  color: #64ffda;
+  color: #ff4b91;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline wavy;
+  color: #fffb96;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  background: #1f2937;
-  font-size: 0.9rem;
-  color: #9ca3af;
+  background: #0f0c29;
+  font-size: 1rem;
+  color: #b3b3ff;
+  border-top: 2px solid #ff4b91;
 }
 
 .resume-badge {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: #64ffda;
-  color: #0f2027;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  background: #fffb96;
+  color: #0f0c29;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
   z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
 }
+
 .resume-badge:hover {
-  background: #52e0c4;
+  background: #ffe359;
+  transform: scale(1.05);
 }
