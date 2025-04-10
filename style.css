@@ -1,111 +1,106 @@
-/* style.css - Groovy Orange Remix */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;700&display=swap');
+/* style.css - Modern Minimalist with Data Flair */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --bg-dark: #0e1117;
+  --bg-light: #1c1f26;
+  --accent: #00c2a8;
+  --highlight: #f4a261;
+  --text-light: #e0e0e0;
+  --text-muted: #a1a1a1;
+  --border-light: #2a2e35;
+}
 
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: radial-gradient(circle at top left, #ff9a00, #ff6f00, #442200);
-  color: #fff8e7;
+  background: var(--bg-dark);
+  color: var(--text-light);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 .hero {
   text-align: center;
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #331a00, #663300, #994d00);
-  animation: pulseBg 10s infinite ease-in-out;
-}
-
-@keyframes pulseBg {
-  0%, 100% {
-    background-position: left center;
-  }
-  50% {
-    background-position: right center;
-  }
+  background: var(--bg-light);
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   font-family: 'Fira Code', monospace;
-  color: #ffd580;
-  text-shadow: 2px 2px 0 #ff9100;
+  color: var(--accent);
 }
 
 .hero p {
-  font-size: 1.4rem;
-  color: #ffe0b2;
+  font-size: 1.2rem;
+  color: var(--text-muted);
 }
 
 section {
   padding: 3rem 2rem;
   max-width: 900px;
   margin: auto;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-  border-bottom: 3px dashed #ffc107;
-  padding-bottom: 0.5rem;
-  margin-bottom: 2rem;
   font-family: 'Fira Code', monospace;
-  color: #ffc107;
+  color: var(--highlight);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 0.5rem;
 }
 
 .project {
-  background: #cc6600;
+  background: var(--bg-light);
+  border: 1px solid var(--border-light);
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 10px;
   margin-bottom: 1.5rem;
-  transition: transform 0.3s ease, background 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.3s ease, transform 0.2s ease;
 }
 
 .project:hover {
-  transform: rotate(-1deg) scale(1.03);
-  background: #e67e22;
+  border-color: var(--highlight);
+  transform: translateY(-2px);
 }
 
 a {
-  color: #ffb84d;
+  color: var(--accent);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 a:hover {
-  text-decoration: underline wavy;
-  color: #ffd580;
+  color: var(--highlight);
+  text-decoration: underline;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  background: #331a00;
-  font-size: 1rem;
-  color: #ffddb3;
-  border-top: 2px solid #ff9100;
+  background: var(--bg-light);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-light);
 }
 
 .resume-badge {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: #ffb84d;
-  color: #331a00;
-  padding: 0.6rem 1.2rem;
-  border-radius: 10px;
-  font-weight: bold;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.6rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 600;
   text-decoration: none;
   z-index: 1000;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
 }
 
 .resume-badge:hover {
-  background: #ffc966;
-  transform: scale(1.05);
+  background: var(--highlight);
 }
