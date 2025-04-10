@@ -1,51 +1,54 @@
-/* style.css - Modern Minimalist with Data Flair */
+/* style.css - Surfy Minimal Analyst Vibe */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-  --bg-dark: #0e1117;
-  --bg-light: #1c1f26;
-  --accent: #00c2a8;
-  --highlight: #f4a261;
-  --text-light: #e0e0e0;
-  --text-muted: #a1a1a1;
-  --border-light: #2a2e35;
+  --bg-dark: #0d1b2a;          /* Deep ocean */
+  --bg-light: #1b263b;         /* Dusk blue */
+  --surf-blue: #3a86ff;        /* Ocean blue */
+  --surf-sand: #ffbe0b;        /* Soft sun/sand */
+  --text-light: #f4f4f4;
+  --text-muted: #bfc9d1;
+  --border-light: #2e3a4d;
+  --accent-muted: #83c5be;     /* Seafoam green */
 }
 
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: var(--bg-dark);
+  background: linear-gradient(to bottom, var(--bg-dark), var(--bg-light));
   color: var(--text-light);
   line-height: 1.6;
 }
 
 .hero {
   text-align: center;
-  padding: 5rem 2rem;
-  background: var(--bg-light);
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(135deg, #264653, #1b263b);
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   font-family: 'Fira Code', monospace;
-  color: var(--accent);
+  color: var(--surf-blue);
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: var(--text-muted);
+  color: var(--accent-muted);
 }
 
 section {
   padding: 3rem 2rem;
   max-width: 900px;
   margin: auto;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
 }
 
 h2 {
   font-family: 'Fira Code', monospace;
-  color: var(--highlight);
+  color: var(--surf-sand);
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--border-light);
@@ -53,27 +56,27 @@ h2 {
 }
 
 .project {
-  background: var(--bg-light);
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-light);
   padding: 1.5rem;
   border-radius: 10px;
   margin-bottom: 1.5rem;
-  transition: border-color 0.3s ease, transform 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.3s ease;
 }
 
 .project:hover {
-  border-color: var(--highlight);
   transform: translateY(-2px);
+  border-color: var(--surf-sand);
 }
 
 a {
-  color: var(--accent);
+  color: var(--surf-blue);
   text-decoration: none;
   font-weight: 600;
 }
 
 a:hover {
-  color: var(--highlight);
+  color: var(--surf-sand);
   text-decoration: underline;
 }
 
@@ -90,17 +93,17 @@ footer {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background: var(--accent);
-  color: #fff;
+  background: var(--surf-sand);
+  color: #0d1b2a;
   padding: 0.6rem 1.1rem;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: background 0.3s ease;
 }
 
 .resume-badge:hover {
-  background: var(--highlight);
+  background: #f9c74f;
 }
